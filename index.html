@@ -1,36 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1.0"
+    />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Beta sign up split layout Challenge</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  All your files in one secure location, accessible anywhere.
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 
-  Fylo stores all your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family and co-workers.
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap"
+      rel="stylesheet"
+    />
 
-  Sign up for early access
+    <script
+      src="https://kit.fontawesome.com/58709d6169.js"
+      crossorigin="anonymous"
+    ></script>
+    <style></style>
+    <title>Frontend Mentor | Beta sign up split layout Challenge</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <header>
+        <div class="logo">
+          <img src="./assets/images/logo.svg" alt="" />
+        </div>
 
-  Sign Up
+        <div class="social">
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-facebook-f"></i>
+          <i class="fas fa-envelope"></i>
+        </div>
+      </header>
 
-  Privacy Policy
+      <main>
+        <div class="graphics">
+          <img src="./assets/images/illustration-main.svg" alt="" />
+        </div>
+        <div class="content">
+          <h1 id="front-page-header">
+            All your files in one secure location, accessible anywhere.
+          </h1>
+          <p class="body-text">
+            Fylo stores all your most important files in one secure location.
+            Access them wherever you need, share and collaborate with friends,
+            family and co-workers.
+          </p>
 
-  <footer>
-    <p class="attribution">
-      This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
-    </p>
-  </footer>
-</body>
+          <div class="sign-up-form">
+            <form id="sign-up-form" action="post"></form>
+            <label for="email">Sign up for early access</label>
+            <input type="text" />
+            <button class="btn btn-sign-up">Sign Up</button>
+          </div>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </main>
+
+      <footer>
+        <p class="attribution">
+          This page started life as a challenge on
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >
+          🎉
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+}
+
+.main-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 2fr 2fr auto;
+  grid-template-areas:
+    "header"
+    "graphics"
+    "content"
+    "footer";
+}
+
+/* Desktop Design*/
+@media only screen and (min-width: 501px) {
+  .main-container {
+    display: grid;
+
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "graphics header"
+      "graphics content"
+      "graphics footer";
+  }
+
+  header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .content {
+    grid-area: content;
+  }
+
+  .graphics {
+    grid-area: graphics;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(45deg, hsl(243, 86%, 85%), hsl(243, 87%, 12%));
+  }
+
+  footer {
+    grid-area: footer;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
